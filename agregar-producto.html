@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregar-tienda.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>precios | Articulo Nuevo</title>
+</head>
+<body class="back">
+    <header>
+        <h1 class="titulo-pagina">Mi App de precios</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Principal</a>
+                </li>
+                <li>
+                    <a href="alimentos.html">Alimentos</a>
+                </li>
+                <li>
+                    <a href="bebidas.html">Bebidas</a>
+                </li>
+                <li>
+                    <a href="limpieza.html">Limpieza</a>
+                </li>
+
+                <li>
+                    <a href="agregar-tienda.html">Tienda</a>
+                </li>
+
+                <li><a href="agregar-producto.html">Producto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="formulario">
+            
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="imagen">Imagen:</label>
+                <input type="file" name="imagen" id="imagen"><br>
+                <label for="categoria">Categoría</label>
+                <select name="categoria" id="categoria">
+                    <option value="alimentos">Alimentos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="limpieza">Limpieza</option>
+                    <option value="hogar">Hogar</option>
+                </select>
+                <label for="codigo">Código de Barras</label>
+                <input type="text" value="codigo"><br>
+                <label for="incluirPrecio">¿Incluir Precio?</label><br>
+                <input type="checkbox" name="incluirPrecio" id="incluirPrecio">
+                <label for="precio">Precio Base:</label>
+                <input type="text" name="precio" id="precio"><br>
+                <label for="tienda">Tienda:</label>
+                <select name="tienda" id="tienda">
+                    <option value="">seleccionar</option>
+                    <option value="mibodega">Mi Bodega Aurrera - Calpulalpan, Taxcala</option>
+                    <option value="abarrotesLupita">Abarrotes Lupita - Calpulalpan, Tlaxcala</option>
+                    <option value="abarrotesJuan">Abarrotes Juan - Calpulalpan, Tlaxcala</option>
+                    <option value="3b">Tiendas 3B (centro) - Calpulalpan, Tlaxcala</option>
+                </select> <br>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
